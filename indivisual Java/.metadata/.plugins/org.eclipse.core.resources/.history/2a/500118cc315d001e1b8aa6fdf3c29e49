@@ -1,0 +1,20 @@
+package com.cls;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Connection connection = JdbcConeection.getConnection();
+		if(connection==null) {
+			System.out.println("failed");
+		}
+		else {
+			System.out.println("success");
+		}
+	}
+}
