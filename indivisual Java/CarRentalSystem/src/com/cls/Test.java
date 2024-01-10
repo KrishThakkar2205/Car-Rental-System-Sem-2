@@ -15,6 +15,7 @@ public class Test {
 		Scanner StrSc=new Scanner(System.in);
 		if(connect==null){
 			System.out.println("Not Connected:");
+			System.exit(0);
 		}
 		else{
 			System.out.println("Welcome to the Car Rental System");
@@ -100,7 +101,7 @@ public class Test {
 							break;
 						}
 						case 7:{
-							user.getUserId(connect);
+							System.out.println(user.getUserId(connect));
 							break;
 						}
 						case 8:{
